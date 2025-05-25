@@ -1,0 +1,103 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20230722/pngtree-illustrated-3d-render-of-film-slate-and-popcorn-with-movie-tickets-image_3726260.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.register-form {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 50px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 40px rgba(255, 0, 60, 0.3);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Encabezado con ícono */
+.register-header {
+  margin-bottom: 30px;
+}
+
+.register-icon {
+  font-size: 3.5rem;
+  color: #e50914;
+}
+
+.register-header h2 {
+  font-size: 1.8rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.register-header p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #e50914;
+  background-color: #1a1a1a;
+}
+
+/* Botón */
+.btn-submit {
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background-color: #bf0812;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .register-form {
+    padding: 30px 20px;
+  }
+
+  .register-header h2 {
+    font-size: 1.5rem;
+  }
+}

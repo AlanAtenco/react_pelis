@@ -1,0 +1,80 @@
+.navbar {
+  background-color: #141414;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo Netflix-style */
+.logo {
+  display: flex;
+  align-items: center;
+  color: #e50914; /* Netflix red */
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  font-size: 2.8rem;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 2rem;
+}
+
+/* Nav links estilo plano */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item {
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 6px 10px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+  color: #e50914;
+  border-bottom: 2px solid #e50914;
+}
+
+.nav-item.active {
+  color: #e50914;
+  border-bottom: 2px solid #e50914;
+}
+
+/* Íconos */
+.icon {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Botón logout */
+.logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  transition: color 0.3s ease;
+}
+
+.logout-btn:hover {
+  color: #e50914;
+}

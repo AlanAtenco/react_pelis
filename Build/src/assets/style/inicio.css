@@ -1,0 +1,118 @@
+/* Estilos generales encapsulados para evitar conflictos */
+.inicio-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Evita aplicar a todo el proyecto */
+.inicio-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inicio-page .app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header tipo Netflix */
+.inicio-page .header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.inicio-page .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inicio-page .navbar h1 {
+  font-size: 2.5rem;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+}
+
+.inicio-page .search-box {
+  display: flex;
+  align-items: center;
+}
+
+.inicio-page .search-box input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  margin-right: 10px;
+}
+
+.inicio-page .search-box button {
+  background-color: #e50914;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inicio-page .search-box button:hover {
+  background-color: #bf0812;
+}
+
+/* Sección de películas */
+.inicio-page .movie-list {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.inicio-page .movie-list h2 {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #e50914;
+  text-shadow: 1px 1px 4px black;
+}
+
+.inicio-page .movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.inicio-page .movie-card {
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.inicio-page .movie-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.inicio-page .movie-card h3 {
+  font-size: 1.3rem;
+  padding: 15px;
+  background-color: #222;
+  margin-top: -3px;
+}
+
+.inicio-page .movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 60, 0.4);
+}
+
+.inicio-page .movie-card:hover img {
+  transform: scale(1.05);
+}
